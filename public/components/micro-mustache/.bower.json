@@ -1,0 +1,13 @@
+{
+  "name": "1537847",
+  "_release": "717d3aacfc",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "717d3aacfc881743e068e7e15ebcd8be98c38c67"
+  },
+  "_source": "https://gist.github.com/1537847.git",
+  "_target": "*",
+  "_originalSource": "https://gist.github.com/1537847.git",
+  "_direct": true
+}
