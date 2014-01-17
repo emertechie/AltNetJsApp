@@ -1,0 +1,13 @@
+body {
+    padding: 20px;
+}
+
+.notes {
+    width: 500px;
+}
+
+.notes .btn-group,
+.notes .input,
+.notes .input-group {
+    margin-bottom: 10px;
+}

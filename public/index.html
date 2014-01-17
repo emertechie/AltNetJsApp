@@ -2,8 +2,34 @@
 <html>
 <head>
     <title>Sample JS App</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <p>Is this thing on?</p>
+
+<div class="notes">
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-success">New</button>
+        <button type="button" class="btn btn-success">New Checked</button>
+    </div>
+
+    <form>
+        <div class="input">
+            <input type="text" class="form-control">
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">
+                <input type="checkbox">
+            </span>
+            <input type="text" class="form-control">
+        </div>
+    </form>
+</div>
+
+    <script src="components/jquery/jquery.min.js"></script>
+    <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
