@@ -1,7 +1,11 @@
 requirejs.config({
     baseUrl: 'components',
     paths: {
-        jquery: 'jquery/jquery.min',
+        jquery: [
+            'http://code.jquery.com/jquery-1.10.2.min',
+            // If the CDN fails, load from this location
+            'jquery/jquery.min'
+        ],
         bootstrap: 'bootstrap/dist/js/bootstrap.min',
         app: '../js/app',
         microMustache: 'micro-mustache/micro-mustache.min'
