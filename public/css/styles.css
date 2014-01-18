@@ -8,6 +8,7 @@ body {
 
 .notes .btn-group,
 .notes .input,
-.notes .input-group {
+.notes .input-group,
+form input{
     margin-bottom: 10px;
 }

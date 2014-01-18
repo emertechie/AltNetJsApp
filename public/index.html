@@ -11,13 +11,15 @@
 
 <div class="notes">
 
-    <div class="btn-group">
-        <button type="button" class="btn btn-success">New</button>
-        <button type="button" class="btn btn-success">New Checked</button>
-    </div>
+    <form class="well">
+        <input id="todoText" type="text" class="form-control" placeholder="Add todo...">
+        <button id="add" type="button" class="btn btn-success">New</button>
+        <button id="addChecked" type="button" class="btn btn-success">New Checked</button>
+    </form>
 
-    <form>
-        <div class="input">
+    <h3>Todos</h3>
+    <div class="todos">
+        <!--<div class="input">
             <input type="text" class="form-control">
         </div>
         <div class="input-group">
@@ -25,11 +27,25 @@
                 <input type="checkbox">
             </span>
             <input type="text" class="form-control">
-        </div>
-    </form>
+        </div>-->
+    </div>
 </div>
 
-    <script src="components/jquery/jquery.min.js"></script>
-    <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/html" id="todo_tmpl">
+        <div class="input">
+            <input type="text" class="form-control" value="{{=text}}">
+        </div>
+    </script>
+
+    <script type="text/html" id="checked_todo_tmpl">
+        <div class="input-group">
+            <span class="input-group-addon">
+                <input type="checkbox" {{=checked ? 'checked="checked"' : ''}}>
+            </span>
+            <input type="text" class="form-control" value="{{=text}}">
+        </div>
+    </script>
+
+    <script data-main="js/main" src="components/requirejs/require.js"></script>
 </body>
 </html>
