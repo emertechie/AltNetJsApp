@@ -13,5 +13,8 @@
   "gitHead": "4558798f6e4c610f8e89e67f9f1a49163383ab17",
   "dependencies": {
     "express": "3.x"
+  },
+  "devDependencies": {
+    "requirejs": "~2.1.10"
   }
 }
